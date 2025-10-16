@@ -1,0 +1,6 @@
+void printName() {
+  print("Shahriar");
+}
+void main() {
+  printName();
+}

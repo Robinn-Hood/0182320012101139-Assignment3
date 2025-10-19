@@ -1,0 +1,16 @@
+import 'dart:io';
+
+String reverseString(String input) {
+  return input.split('').reversed.join('');
+}
+
+void main() {
+  print("Enter a string to reverse:");
+  String? userInput = stdin.readLineSync();
+
+  if (userInput != null) {
+    print("Reversed string: ${reverseString(userInput)}");
+  } else {
+    print("No Input Recived.");
+  }
+}

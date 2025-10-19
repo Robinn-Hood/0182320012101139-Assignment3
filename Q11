@@ -1,0 +1,15 @@
+import 'dart:io';
+
+void main() {
+  print("Enter length:");
+  var inputLength = stdin.readLineSync();
+
+  print("Enter width:");
+  var inputWidth = stdin.readLineSync();
+
+  var length = double.parse(inputLength!);
+  var width = double.parse(inputWidth!);
+
+  var area = length * width;
+  print("Area is: $area");
+}

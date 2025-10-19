@@ -1,0 +1,18 @@
+import 'dart:io';
+
+bool isEven(int number) {
+  return number % 2 == 0;
+}
+
+void main() {
+  print("Enter a number:");
+  var input = stdin.readLineSync();
+
+  var number = int.parse(input!);
+
+  if (isEven(number)) {
+    print("$number is Trure.");
+  } else {
+    print("$number is False.");
+  }
+}

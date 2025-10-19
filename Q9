@@ -1,0 +1,22 @@
+import 'dart:io';
+
+void main() {
+  print("Enter first number:");
+  var input1 = stdin.readLineSync();
+
+  print("Enter second number:");
+  var input2 = stdin.readLineSync();
+
+  print("Enter third number:");
+  var input3 = stdin.readLineSync();
+
+  var num1 = int.parse(input1!);
+  var num2 = int.parse(input2!);
+  var num3 = int.parse(input3!);
+
+  var max = (num1 > num2)
+      ? (num1 > num3 ? num1 : num3)
+      : (num2 > num3 ? num2 : num3);
+
+  print("Maximum number is: $max");
+}
